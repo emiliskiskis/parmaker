@@ -7,10 +7,10 @@
     ifh dw 0
     ofh dw 1
     current_symbol db ?
-    in_buff db 512 dup (?)
+    in_buff db 1024 dup (?)
     in_buff_end dw ?
     in_buff_length dw ?
-    out_buff db 512 dup (?)
+    out_buff db 1024 dup (?)
     out_buff_i dw 0
     word_buff db 75 dup (?)
     word_length db 0
@@ -54,7 +54,7 @@ read_pars:
     end_read_ifn:
 
     cmp cl, 0
-    je open_if
+    je skip_read_ofn
     
     inc si
     dec cl
@@ -67,6 +67,8 @@ read_pars:
         inc si
         inc di
     loop read_ofn
+
+    skip_read_ofn:
 
     mov dx, ds
     mov es, dx
@@ -114,6 +116,10 @@ create_of_error:
     int 21h
     
 main_logic:
+    xor ax, ax
+    xor bx, bx
+    xor cx, cx
+    xor dx, dx
 
     ;Prep for mainloop (read and load print buff address (di))
     call Read
@@ -179,13 +185,13 @@ main_logic:
             inc si
             cmp si, in_buff_end
             jb skip_read
-            cmp in_buff_length, 512
+            cmp in_buff_length, 1024
             jb exit_main_loop
             call Read
             cmp in_buff_length, 0
             je exit_main_loop
             skip_read:
-            cmp out_buff_i, 512
+            cmp out_buff_i, 1024
             jb skip_print
             call Print
             skip_print:
@@ -235,7 +241,7 @@ proc Read
     
     mov ah, 3Fh
     mov bx, ifh
-    mov cx, 512
+    mov cx, 1024
     lea dx, in_buff
     int 21h
 
@@ -292,7 +298,7 @@ proc CopyWord
     inc ah
     no_carry:
     ;Flush output buffer if won't fit
-    cmp ax, 512
+    cmp ax, 1024
     jb skip_copyword_print
     call Print
     skip_copyword_print:
@@ -315,7 +321,7 @@ endp CopyWord
 ;Copy two symbols (\r\n) to output buffer
 proc PushNewline
     ;Flush output buffer if won't fit
-    cmp out_buff_i, 510
+    cmp out_buff_i, 1022
     jb skip_newline_print
     call Print
     skip_newline_print:
@@ -333,7 +339,7 @@ endp PushNewline
 ;Copy one symbol (" ") to output buffer
 proc PushSpace
     ;Flush output buffer if won't fit (shouldn't ever happen)
-    cmp out_buff_i, 511
+    cmp out_buff_i, 1023
     jb skip_space_print
     call Print
     skip_space_print:

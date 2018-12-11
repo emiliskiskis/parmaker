@@ -1,7 +1,4 @@
-parmaker.obj
-parmaker.exe
-parmaker.map
-comp.bat
-debug.bat
-input.txt
-output.txt
+*
+!parmaker.asm
+!Samples
+!README.md
