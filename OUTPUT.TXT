@@ -1,0 +1,87 @@
+However, it only creates paragraphs after finding a new line, so the 
+original text must be like this. This is actually what Microsoft Word and 
+other text editors with word wrap do, except they do it real-time.
+
+This is a file with some text
+
+That contains the formatting that
+
+is required or some shit.
+
+I don't know how this works, but I think it's supposed to make it so like 
+long lines are converted into narrow paragraphs, which makes them way 
+easier to read.
+
+However, it only creates paragraphs after finding a new line, so the 
+original text must be like this. This is actually what Microsoft Word and 
+other text editors with word wrap do, except they do it real-time.
+
+This is a file with some text
+
+That contains the formatting that
+
+is required or some shit.
+
+I don't know how this works, but I think it's supposed to make it so like 
+long lines are converted into narrow paragraphs, which makes them way 
+easier to read.
+
+However, it only creates paragraphs after finding a new line, so the 
+original text must be like this. This is actually what Microsoft Word and 
+other text editors with word wrap do, except they do it real-time.
+
+This is a file with some text
+
+That contains the formatting that
+
+is required or some shit.
+
+I don't know how this works, but I think it's supposed to make it so like 
+long lines are converted into narrow paragraphs, which makes them way 
+easier to read.
+
+However, it only creates paragraphs after finding a new line, so the 
+original text must be like this. This is actually what Microsoft Word and 
+other text editors with word wrap do, except they do it real-time.
+
+This is a file with some text
+
+That contains the formatting that
+
+is required or some shit.
+
+I don't know how this works, but I think it's supposed to make it so like 
+long lines are converted into narrow paragraphs, which makes them way 
+easier to read.
+
+However, it only creates paragraphs after finding a new line, so the 
+original text must be like this. This is actually what Microsoft Word and 
+other text editors with word wrap do, except they do it real-time.
+
+This is a file with some text
+
+That contains the formatting that
+
+is required or some shit.
+
+I don't know how this works, but I think it's supposed to make it so like 
+long lines are converted into narrow paragraphs, which makes them way 
+easier to read.
+
+However, it only creates paragraphs after finding a new line, so the 
+original text must be like this. This is actually what Microsoft Word and 
+other text editors with word wrap do, except they do it real-time.
+
+This is a file with some text
+
+That contains the formatting that
+
+is required or some shit.
+
+I don't know how this works, but I think it's supposed to make it so like 
+long lines are converted into narrow paragraphs, which makes them way 
+easier to read.
+
+However, it only creates paragraphs after finding a new line, so the 
+original text must be like this. This is actually what Microsoft Word and 
+other text editors with word wrap do, except they do it real-time.
